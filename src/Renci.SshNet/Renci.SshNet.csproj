@@ -9,6 +9,16 @@
     <SignAssembly>true</SignAssembly>
     <TargetFrameworks>net6</TargetFrameworks>
   </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\images\logo\png\SS-NET-icon-h500.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="SshNet.Security.Cryptography" Version="[1.3.0]" />
@@ -16,5 +26,17 @@
 
   <PropertyGroup>
     <DefineConstants>FEATURE_STRINGBUILDER_CLEAR;FEATURE_HASHALGORITHM_DISPOSE;FEATURE_ENCODING_ASCII;FEATURE_DIAGNOSTICS_TRACESOURCE;FEATURE_DIRECTORYINFO_ENUMERATEFILES;FEATURE_MEMORYSTREAM_GETBUFFER;FEATURE_MEMORYSTREAM_TRYGETBUFFER;FEATURE_RNG_CREATE;FEATURE_SOCKET_TAP;FEATURE_SOCKET_APM;FEATURE_SOCKET_EAP;FEATURE_SOCKET_SYNC;FEATURE_SOCKET_SELECT;FEATURE_SOCKET_POLL;FEATURE_SOCKET_DISPOSE;FEATURE_DNS_SYNC;FEATURE_DNS_APM;FEATURE_DNS_TAP;FEATURE_STREAM_APM;FEATURE_STREAM_TAP;FEATURE_THREAD_COUNTDOWNEVENT;FEATURE_THREAD_TAP;FEATURE_THREAD_THREADPOOL;FEATURE_THREAD_SLEEP;FEATURE_WAITHANDLE_DISPOSE;FEATURE_HASH_MD5;FEATURE_HASH_SHA1_CREATE;FEATURE_HASH_SHA256_CREATE;FEATURE_HASH_SHA384_CREATE;FEATURE_HASH_SHA512_CREATE;FEATURE_HMAC_MD5;FEATURE_HMAC_SHA1;FEATURE_HMAC_SHA256;FEATURE_HMAC_SHA384;FEATURE_HMAC_SHA512;FEATURE_ECDSA;FEATURE_TAP</DefineConstants>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageTags>ssh scp sftp</PackageTags>
+    <Description>SSH.NET is a Secure Shell (SSH) library for .NET, optimized for parallelism and with broad framework support.</Description>
+    <Authors>Renci</Authors>
+    <Product>SSH.NET for dotnet6</Product>
+    <RepositoryUrl>https://github.com/zwcloud/SSH.NET</RepositoryUrl>
+    <PackageId>SSH.NET6</PackageId>
+    <Title>SSH.NET for dotnet6</Title>
+    <PackageIcon>SS-NET-icon-h500.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/zwcloud/SSH.NET</PackageProjectUrl>
   </PropertyGroup>
 </Project>
