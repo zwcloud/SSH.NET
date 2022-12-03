@@ -1,6 +1,8 @@
-﻿ ![Logo](images/logo/png/SS-NET-icon-h50.png) SSH.NET
+﻿ ![Logo](https://raw.githubusercontent.com/sshnet/SSH.NET/develop/images/logo/png/SS-NET-icon-h50.png) SSH.NET
 =======
 SSH.NET is a Secure Shell (SSH-2) library for .NET, optimized for parallelism.
+
+On 3/12/2022, this fork removed all legacy staff and support dotnet6+ only.
 
 [![Version](https://img.shields.io/nuget/vpre/SSH.NET.svg)](https://www.nuget.org/packages/SSH.NET)
 [![NuGet download count](https://img.shields.io/nuget/dt/SSH.NET.svg)](https://www.nuget.org/packages/SSH.NET)
@@ -17,7 +19,7 @@ of the [latest release](https://github.com/sshnet/SSH.NET/releases/latest) page.
 to [right-click and "unblock"](https://support.microsoft.com/en-us/help/2021383/some-chm-files-may-not-render-properly-on-windows-vista-and-windows-7)
 the CHM file after you download it.
 
-Currently (4/18/2020), the documentation is very sparse.  Fortunately, there are a large number of tests in
+On 4/18/2020, the documentation is very sparse.  Fortunately, there are a large number of tests in
 [Renci.SshNet.Tests](https://github.com/sshnet/SSH.NET/tree/develop/src/Renci.SshNet.Tests) that demonstrate
 usage with working code.
 
@@ -115,16 +117,7 @@ Private keys can be encrypted using one of the following cipher methods:
 * hmac-ripemd160<span></span>@openssh.com
 
 ## Framework Support
-**SSH.NET** supports the following target frameworks:
-* .NET Framework 3.5
-* .NET Framework 4.0 (and higher)
-* .NET Standard 1.3
-* .NET Standard 2.0
-* Silverlight 4
-* Silverlight 5
-* Windows Phone 7.1
-* Windows Phone 8.0
-* Universal Windows Platform 10
+net6.0
 
 ## Usage
 
@@ -180,13 +173,7 @@ using (var client = new SshClient("sftp.foo.com", "guest", "pwd"))
 
 ## Building SSH.NET
 
-Software                          | net35 | net40 | netstandard1.3 | netstandard2.0 | sl4 | sl5 | wp71 | wp8 | uap10.0 |
---------------------------------- | :---: | :---: | :------------: | :------------: | :-: | :-: | :--: | :-: | :-----: |
-Windows Phone SDK 8.0             |       |       |                |                | x   | x   | x    | x   |
-Visual Studio 2012 Update 5       | x     | x     |                |                | x   | x   | x    | x   |
-Visual Studio 2015 Update 3       | x     | x     |                |                |     | x   |      | x   | x
-Visual Studio 2017                | x     | x     | x              | x              |     |     |      |     | 
-Visual Studio 2019                | x     | x     | x              | x              |     |     |      |     | 
+Open `\src\Renci.SshNet.sln` in VS2022, and build project `Renci.SshNet`.
 
 ## Supporting SSH.NET
 
