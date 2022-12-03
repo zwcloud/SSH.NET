@@ -63,7 +63,7 @@ namespace Renci.SshNet.Abstractions
         }
 
 #if FEATURE_TAP
-        public static Task ConnectAsync(Socket socket, IPEndPoint remoteEndpoint, CancellationToken cancellationToken)
+        public static ValueTask ConnectAsync(Socket socket, IPEndPoint remoteEndpoint, CancellationToken cancellationToken)
         {
             return socket.ConnectAsync(remoteEndpoint, cancellationToken);
         }
